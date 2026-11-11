@@ -73,6 +73,7 @@ def run(environment: Environment, vision: Vision, output: Path, *, count=100,
         report = {
             "environment": environment.name,
             "track": "local-fixture" if fixture else "external-api-environment",
+            "model_name": "Vision CLV1",
             "model": "vispark/vision-large",
             "continual_learning": True,
             "status": status,

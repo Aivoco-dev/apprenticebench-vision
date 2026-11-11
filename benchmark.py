@@ -1,4 +1,4 @@
-"""CLI for the Vision Large accounts-payable runner."""
+"""CLI for the Vision CLV1 accounts-payable runner."""
 
 import argparse
 import importlib

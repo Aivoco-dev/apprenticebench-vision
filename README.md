@@ -1,9 +1,11 @@
-# Vision Large runner for ApprenticeBench
+# Vision CLV1 for ApprenticeBench
 
-This Python runner connects Vispark Vision Large to an accounts-payable
-evaluation environment through application tools. It enables native continual
-learning, passes the latest state to the next Vision request, and writes a JSON
-report from the environment's grades after the 100-task sequence.
+Vision CLV1 stands for Vision Continual Learning Version 1. This Python runner
+connects it to an accounts-payable evaluation environment through application
+tools. It enables native continual learning, passes the latest state to the next
+Vision request, and writes a JSON report from the environment's grades after the
+100-task sequence. Reports include the display name and the Vispark model ID
+(`vispark/vision-large`).
 
 **Official run status.** NeoCognition's public ApprenticeBench materials describe
 the benchmark and show results and examples. This repository does not include
@@ -40,7 +42,7 @@ Place the environment adapter in an importable Python module, for example
 ```sh
 PYTHONPATH=private python3 benchmark.py \
   --environment apprentice_adapter:create_environment \
-  --report runs/vision-large-cl.json
+  --report runs/vision-clv1.json
 ```
 
 The command expects a fresh evaluation session and exactly 100 tasks. Set

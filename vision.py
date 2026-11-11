@@ -1,4 +1,4 @@
-"""Client for Vision Large's native, non-streaming API."""
+"""Client for the native, non-streaming API used by Vision CLV1."""
 
 import json
 import time

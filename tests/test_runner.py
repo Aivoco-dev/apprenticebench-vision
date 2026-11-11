@@ -148,6 +148,8 @@ class RunnerTest(unittest.TestCase):
             ]), 0)
         self.assertEqual(http.requests[0][0].get_header("X-api-key"), "local-test")
         result = json.loads(self.report.read_text())
+        self.assertEqual(result["model_name"], "Vision CLV1")
+        self.assertEqual(result["model"], "vispark/vision-large")
         self.assertEqual(result["completed_tasks"], 100)
         self.assertEqual(result["passed_tasks"], 99)
         self.assertEqual(result["success_rate"], 0.99)
